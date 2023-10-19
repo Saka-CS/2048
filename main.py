@@ -33,7 +33,6 @@ class App(ctk.CTk):
         self.best_score = [0] * 10
         for i in range(10):
             self.best_score[i] = ctk.IntVar(value=int(settings_file.readline()))
-            print(self.best_score[i].get())
 
         self.BUTTON_FONT = ctk.CTkFont(
             family="Helvetica",
