@@ -943,9 +943,7 @@ class Settings(ctk.CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(master=parent, fg_color=BACKGROUND_COLOR)
 
-        image_tk = ctk.CTkImage(Image.open("Font to Install/edit.png"), size=(600, 800))
-
-        button = ctk.CTkButton(self, image=image_tk, fg_color="transparent", text="", command=lambda: game_exit(True, controller, controller.best_score))
+        button = ctk.CTkButton(self, fg_color="transparent", text="I did not have time to add settings", command=lambda: game_exit(True, controller, controller.best_score))
         button.pack(expand=True, fill="both")
 
 ctk.set_appearance_mode("dark")
