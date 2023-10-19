@@ -1,5 +1,5 @@
 # 2048
-2048 game made with python and tkinter. Don't open the setting. I repeat DO NOT OPEN THE SETTINGS...
+2048 game made with python and tkinter.
 
 # Example screen shots
 
