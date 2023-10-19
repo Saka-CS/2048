@@ -3,7 +3,6 @@ from random import choices
 from settings import *
 from Number import *
 from tkinter import Label
-import pygame
 from ctypes import windll, byref, sizeof, c_int
 from PIL import Image
 
@@ -29,17 +28,12 @@ class App(ctk.CTk):
         self.title("2048")
         self.minsize(600, 800)
         self.resizable(False, False)
-
+        
         music = settings_file.readline()
         self.best_score = [0] * 10
         for i in range(10):
             self.best_score[i] = ctk.IntVar(value=int(settings_file.readline()))
             print(self.best_score[i].get())
-
-        if(music == 'T\n'):
-            pygame.mixer.init()
-            pygame.mixer.music.load("Font to Install/1-01 Doki Doki Literature Club!.mp3")
-            pygame.mixer.music.play(loops=420)
 
         self.BUTTON_FONT = ctk.CTkFont(
             family="Helvetica",
